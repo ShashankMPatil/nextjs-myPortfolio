@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Poppins';
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&family=Raleway:wght@600&display=swap')format(truetype);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gilroy';
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+.mainDiv{
+  margin: 0px;
+}
+.myHeader{
+
+  left: 10%;
+  width: 80%;
+  top: 50px;
+  height: 75px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  position: fixed;
+}
+
+.myLogo{
+  margin-left: 30px;
+  /* background-color: transparent; */
+}
+.myLogo img{
+  height: 60px;
+  width: 70px;
+  border-radius: 50%;
+}
+
+.myLogoText{
+  color: black;
+  font-size: 20px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.navDiv{
+  font-size: 1.2rem;
+  margin-right: auto;
+  margin-left: 270px;
+  /* background-color: red; */
+  display: flex;
+}
+
+.hireButton{
+  border: 2px solid black;
+  font-size: 1.3rem;
+  margin-right: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  width: 150px;
+  border-radius: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.hireButton:hover{
+  background-color: black;
+  color: white;
+}
+
+.myImage{
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* mix-blend-mode: color-burn; */
+}
+.myText{
+  /* background-color: red; */
+  width: 500px;
+  height: 500px;
+  margin-top: 18%;
+  line-height: 4rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.myText1{
+  font-size: 3rem;
+}
+
+
+.myText2{
+  font-size: 4rem;
+}
+.myText3{
+  font-size: 2rem;
+}
+.myPhoto{
+  margin-top: 5%;
+  margin-right: 10%;
+  /* background-color: black; */
+}
+.myTextCircle{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  position:absolute;
+  top: 34%;
+  border: 2px solid black;
+  /* background-color: aqua; */
+  mix-blend-mode: difference;
+  
+}
+.mainSection{
+  padding-right: 15%;
+  padding-left: 15%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 125px;
+  /* background-color: bisque; */
+}
+
+
+.aboutSection{
+  height: 100vh;
+  width: 100%;
+}
+.projectSection{
+  display: flex;
+  margin-bottom: 10%;
+}
+.cardMain{
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardButton {
+  background-color: white;
+}
+.myText4{
+  font-size: 5rem;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+.spanLine{
+  width: 90%;
+  height: 5px;
+  background-color: black;
+  animation-name: lineExpand;
+  animation-duration: 2s;
+  animation-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+@keyframes lineExpand {
+    0%{
+      width: 0%;
+    }
+    100%{
+      width: 80%;
+    }
+}
